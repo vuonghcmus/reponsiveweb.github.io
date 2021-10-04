@@ -56,7 +56,7 @@ header .logo {
   border-radius: 25px;
   color: black;
   /* padding: 5px 40px; */
-  margin-right: 10px;
+  margin-right: 50px;
 }
 
 .container .btn-first .check-out {
@@ -101,6 +101,10 @@ header .logo {
   justify-content: flex-end;
 }
 
+.container .comment .row > p {
+  color: rgb(0 135 200);
+}
+
 .container .comment .row .author small {
   padding-top: 12px;
   color: rgba(0, 0, 0, 0.5);
@@ -127,7 +131,7 @@ header .logo {
   border-radius: 25px;
   color: black;
   /* padding: 5px 40px; */
-  margin-left: 50px;
+  margin-left: 75px;
 }
 
 .container .btn-second .dont-wait {
@@ -163,18 +167,51 @@ footer .copy-right {
   padding: 0;
   height: 30px;
   border-radius: 0 0 15px 15px;
+  margin-bottom: 10px;
 }
 
 /* reposive button */
 @media only screen and (max-width: 576px) {
-  i {
+  i,
+  p,
+  small {
     font-size: 10px;
     /* line-height: 0.2; */
+  }
+
+  h6 {
+    font-size: 11px;
+  }
+
+  h5,
+  .btn b {
+    font-size: 12px;
+  }
+
+  .container .btn-first .btn {
+    margin-right: 10px;
+  }
+
+  .container .btn-second .btn {
+    margin-left: 10px;
+  }
+
+  .btn {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .picture img,
   .btn-second img,
   .btn-first img {
     width: 50px !important;
+  }
+
+  .dont-wait img {
+    align-self: center !important;
+  }
+
+  footer p {
+    font-size: 6px;
   }
 }
