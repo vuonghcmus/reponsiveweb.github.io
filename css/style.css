@@ -163,10 +163,11 @@ footer .container-fluid .row h5 {
 footer .copy-right {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #515a5a;
   padding: 0;
   height: 30px;
-  border-radius: 0 0 15px 15px;
+  /* border-radius: 0 0 15px 15px; */
   margin-bottom: 10px;
 }
 
@@ -201,6 +202,11 @@ footer .copy-right {
     padding-bottom: 0;
   }
 
+  .container .row > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .picture img,
   .btn-second img,
   .btn-first img {
@@ -213,5 +219,9 @@ footer .copy-right {
 
   footer p {
     font-size: 6px;
+  }
+
+  footer .container-fluid.copy-right {
+    align-items: flex-end;
   }
 }
