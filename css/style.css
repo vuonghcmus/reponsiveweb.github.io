@@ -50,6 +50,10 @@ header .logo {
   margin: 20px 0;
 }
 
+.container .btn:hover {
+  opacity: 0.8;
+}
+
 .container .btn-first .btn {
   align-self: center;
   background-color: rgb(129 211 252);
